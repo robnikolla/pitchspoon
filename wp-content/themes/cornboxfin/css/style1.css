@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+body{
+     font-family:"Nunito Sans";
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#ff6763 ;
+}
+#featuredposts{
+	margin: 0px 15%;
+	width: 70%;
+	display:inline-flex;
+}
+.rating-a{
+	border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+.rating-b{
+	border:3px solid red;
+	border-radius: 50%;
+	width:70px;
+	height:70px;
+	padding-left:13px;
+	padding-top:15px;
+	color:red;
+}
+.yarp-related{
+	float:right;
+}
+.newsletter__submit-button {
+    text-transform: uppercase;
+    border: 0;
+    padding: 0.65rem 2.2rem;
+    letter-spacing: 2px;
+    margin-left: .5rem;
+    margin-right:.9rem;
+    border-radius: 3px;
+    background: #ff6763;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: background-color .15s;
+    transition: background-color .15s;
+
+}
+.newsletter__email-input {
+    color: #2b2b2b;
+    width: 250px;
+    padding:0.6rem 0.9rem;
+    border: 1px solid #eee;
+    outline: none;
+    -webkit-transition: border-color .15s;
+    transition: border-color .15s;
+}
+body{
+    background-color:white;
+}
+ul.nav a:hover { color:#ff6763 !important; 
+}
+ul.nav a{
+    margin:0px 15px;
+    font-size: 20px;
+}
+footer{
+    color:#ff6763;
+    }
+.imghov:hover{
+ -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: gray 0px 4px 16px, gray 0px 8px 24px, gray 0px 16px 56px;
+}
+.ulii{
+    margin-left:150px;
+}
+.brdr{
+    border-color:gray;
+    font-size:20px;
+}
+.page-numbers{
+    text-decoration:none;
+    font-size:30px;
+    margin:0px 15px;
+    color:#212529;
+}
+.page-numbers:hover{
+    color:#ff6763;
+}
+.pagination{
+    justify-content: center;
+}
+.newsletter__submit-button:hover{
+    transition:0.5s;
+    background-color:#343a40 !important;
+    color:white;
+}
+
+#submit {
+    text-transform: uppercase;
+    border: 0;
+    padding: 0.5rem 2.0rem;
+    letter-spacing: 1px;
+    margin-left: .5rem;
+    margin-right:.9rem;
+    border-radius: 3px;
+    background: #343a40;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: background-color .15s;
+    transition: background-color .15s;
+} 
+#submit:hover {
+transition:0.5s;
+    background-color:#ff6763 !important;
+    color:white;
+}
+#submit:active { 
+position:relative;
+top:1px;
+}
+.logged-in-as a{
+    color:#343a40;
+}
+.comment-list a{
+    color:#343a40;
+}
+
+/* Rating Style*/
+.comments-rating {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.comments-rating label {
+    display: inline-block;
+}
+
+.rating-container {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating-container * {
+    font-size: 1.4rem;
+}
+
+.rating-container > input {
+    display: none;
+}
+
+.rating-container > input + label {
+    /* only enough room for the star */
+    font-family: 'dashicons';
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rating-container > input + label:before {
+    display: inline-block;
+    text-indent: -9999px;
+    content: "\f154";
+    color: gray;
+}
+
+.rating-container > input:checked ~ label:before,
+.rating-container > input + label:hover ~ label:before,
+.rating-container > input + label:hover:before {
+    content: "\f155";
+    color: #ff6763;
+    text-shadow: 0 0 1px #333;
+}
+
+.rating-container > .star-cb-clear + label {
+    text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+}
+
+.rating-container > .star-cb-clear + label:before {
+    width: .5em;
+}
+
+.rating-container:hover > input + label:before {
+    content: "\f154";
+    color: gray;
+    text-shadow: none;
+}
+
+.rating-container:hover > input + label:hover ~ label:before,
+.rating-container:hover > input + label:hover:before {
+    content: "\f155";
+    color: gray;
+    text-shadow: 0 0 1px #333;
+}
+
+.comment-respond .rating-container > .star-cb-clear + label, .comment-respond .rating-container > input + label:before {
+    text-indent: 9999px;
+}
+
+.comment-respond .rating-container > input + label {
+    text-indent: -9999px;
+}
+#recent-posts-3{
+    margin-top:15px;
+}
+#sidebar a{
+    text-decoration: none;
+    color:black;
+
+}
+#nav_menu-2{
+    margin-top:15px;
+}
+
+
+.comment-body {
+    margin: 0 0 20px;
+    overflow: hidden;
+    position: relative;
+    color:black;
+    padding: 10px;
+}
+.comment-body a{
+        text-decoration:none;
+        color:black;
+
+    }
+
+.staffprofile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+.fn{
+    font-size:18px;
+}
+.commentmetadata a{
+    font-size:10px;
+}
+.comment-reply-link{
+    font-size:14px;
+}
+.comment-form-comment label{
+    margin-bottom:10px;
+}
+#respond{
+    background-color:white;
+    color:black;
+    padding:20px;
+}
+#reply-title{
+    color:#ff6763;
+}
+#author{
+    margin-left:11px;
+}
+#email {
+    margin-left:15px;
+}
+#comment{
+        margin-left:15px;
+
+}
+.comment-notes{
+    display:none;
+    }
+.required{
+    display:none;
+}
+.comment-form-author{
+    margin-left:0px;
+}
+#reply-title{
+    margin-bottom:10px;
+}
